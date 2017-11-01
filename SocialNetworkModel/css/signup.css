@@ -1,0 +1,145 @@
+ul{
+  list-style: none;
+}
+a{
+  color: #63f2d0;
+  text-decoration: none;
+}
+div{
+  cursor: default;
+}
+header{
+  position: fixed;
+  z-index: 5;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 15px black;
+  text-align: left;
+}
+.img1{
+  margin-left: 60px;
+  height: 25px;
+}
+.img2{
+  margin-top: 7.5px;
+  margin-left: 6px;
+  height: 25px;
+}
+.form-signup{
+  margin-left: 37%;
+  background-color: #fff;
+  z-index: 5;
+  position: fixed;
+  margin-top: 90px;
+  text-align: center;
+  width: 26%;
+  height: 60%;
+  opacity: .7;
+  border-radius: 10pt;
+  box-shadow: 0 0 5px white;
+  font-size: 15pt;
+  color: #222;
+  font-weight: 300;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.title{
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  font-size: 25pt;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: grey;
+  font-family: Helvetica,sans-serif;
+  font-weight: 400;
+  border-bottom: 1px dotted grey;
+}
+.form-input{
+  margin-top: 7px;
+  height: 14pt;
+  font-size: 11pt;
+  width: 40%;
+}
+.passwordlabel2{
+  font-size: 12pt;
+}
+.login-btn{
+  margin-top: 10px;
+  height: 35px;
+  width: 80px;
+  border-radius: 7px;
+  font-size: 12pt;
+  font-weight: 600;
+  color: white;
+  background-color: grey;
+  border: none;
+}
+.login{
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-size: 12pt;
+}
+.login-btn:hover{
+  background-color: black;
+  color: white;
+}
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -1;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../pics/slideshow/8.jpg);
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../pics/photoalbum/slider-3.jpg);
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../pics/slideshow/9.jpg);
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../pics/slideshow/8.jpg);
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../pics/photoalbum/slider-3.jpg);
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../pics/slideshow/9.jpg);
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+.error{
+  min-height: 1px;
+  font-size: 11.5px;
+  margin-bottom: 10px;
+  color: red;
+}
